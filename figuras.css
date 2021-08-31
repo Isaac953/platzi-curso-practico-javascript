@@ -148,3 +148,12 @@ input[type="number"]::-webkit-outer-spin-button {
 .button:hover {
   background-color: #85603f;
 }
+
+.figuras__card--buttons-r {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  height: 45px;
+}

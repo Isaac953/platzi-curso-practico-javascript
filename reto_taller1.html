@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Figuras geométricas - Reto 1| Curso práctico de JavaScript en Platzi</title>
+    <link rel="stylesheet" href="figuras.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,900;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/7932647ae3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="body">
+    <header class="header">
+      <h1 class="header__title">Figuras geométricas</h1>
+      <p class="header__subtitle">
+        Este es el primer taller del curso práctico de JavaScript
+      </p>
+    </header>
+    <main class="content">
+      <section class="content__figuras">
+        <form>
+          <div class="content__figuras--row-1">
+            <div class="figuras__card">
+              <h2 class="figuras__card--title">Triángulo Isósceles</h2>
+              <label class="figuras__card--p" for="input_cuadrado"
+                >Ingresar la medida del lado</label
+              >
+              <input
+                class="input"
+                id="input_triangulo_a"
+                type="number"
+                placeholder="Lado A"
+              />
+              <input
+              class="input"
+              id="input_triangulo_b"
+              type="number"
+              placeholder="Lado B"
+            />
+            <input
+            class="input"
+            id="input_triangulo_base"
+            type="number"
+            placeholder="Base"
+          />
+              <div class="figuras__card--buttons-r">
+                <button
+                  class="button"
+                  type="button"
+                  onclick="calcularAlturaTriangulo()"
+                >
+                  Altura
+              </div>
+            </div>
+
+        </form>
+      </section>
+    </main>
+
+    <script src="./reto_taller1.js"></script>
+  </body>
+</html>
