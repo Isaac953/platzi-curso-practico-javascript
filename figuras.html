@@ -32,17 +32,27 @@
                 >Ingresar la medida del lado</label
               >
               <input
-                class="figuras__card--input"
+                class="input"
                 id="InputCuadrado"
                 type="number"
                 placeholder="Lado"
               />
-              <button type="button" onclick="calcularPerimetroCuadrado()">
-                Calcular el perímetro
-              </button>
-              <button type="button" onclick="calcularAreaCuadrado()">
-                Calcula el área
-              </button>
+              <div class="figuras__card--buttons">
+                <button
+                  class="button"
+                  type="button"
+                  onclick="calcularPerimetroCuadrado()"
+                >
+                  Perímetro
+                </button>
+                <button
+                  class="button"
+                  type="button"
+                  onclick="calcularAreaCuadrado()"
+                >
+                  Área
+                </button>
+              </div>
             </div>
             <div class="figuras__card">
               <h2 class="figuras__card--title">Triángulo</h2>
@@ -50,48 +60,73 @@
                 >Ingresar las medidas de los Lados</label
               >
               <input
-                class="figuras__card--input"
+                class="input"
                 id="InputTriangulo"
                 type="number"
                 placeholder="Lado A"
               />
               <input
-                class="figuras__card--input"
+                class="input"
                 id="InputTriangulo2"
                 type="number"
                 placeholder="Lado B"
               />
               <input
-                class="figuras__card--input"
+                class="input"
                 id="InputTriangulo3"
                 type="number"
                 placeholder="Base"
               />
               <input
-                class="figuras__card--input"
+                class="input"
                 id="InputTriangulo4"
                 type="number"
                 placeholder="Altura"
               />
-              <button type="button" onclick="calcularPerimetroTriangulo()">
-                Calcular el perímetro
-              </button>
-              <button type="button" onclick="calcularAreaTriangulo()">
-                Calcula el área
-              </button>
+              <div class="figuras__card--buttons">
+                <button
+                  class="button"
+                  type="button"
+                  onclick="calcularPerimetroTriangulo()"
+                >
+                  Perímetro
+                </button>
+                <button
+                  class="button"
+                  type="button"
+                  onclick="calcularAreaTriangulo()"
+                >
+                  Área
+                </button>
+              </div>
             </div>
             <div class="figuras__card">
               <h2 class="figuras__card--title">Círculo</h2>
               <label class="figuras__card--p" for="InputCuadrado"
-                >Escribe cuanto mide cada lado de tu cuadrado:</label
+                >Ingresa el radio de tú círculo</label
               >
-              <input id="InputCuadrado" type="number" />
-              <button type="button" onclick="calcularPerimetroCuadrado()">
-                Calcular el perímetro
-              </button>
-              <button type="button" onclick="calcularAreaCuadrado()">
-                Calcula el área
-              </button>
+              <input
+                class="input"
+                id="InputCuadrado"
+                type="number"
+                placeholder="Radio"
+              />
+              <div class="figuras__card--buttons">
+                <button
+                  class="button"
+                  type="button"
+                  onclick="calcularPerimetroCuadrado()"
+                >
+                  Perímetro
+                </button>
+                <button
+                  class="button"
+                  type="button"
+                  onclick="calcularAreaCuadrado()"
+                >
+                  Área
+                </button>
+              </div>
             </div>
           </div>
           <!--           <div class="content__figuras--row-2">

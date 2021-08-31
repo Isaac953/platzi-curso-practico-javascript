@@ -6,7 +6,7 @@
 
 .body {
   align-items: center;
-  background-color: #3db2ff;
+  background-color: #86aba1;
   display: flex;
   flex-direction: column;
   font-family: "Mulish", sans-serif;
@@ -33,7 +33,7 @@
 }
 
 .content {
-  border-style: solid;
+  /*   border-style: solid; */
   display: flex;
   height: 500px;
   justify-content: center;
@@ -43,9 +43,10 @@
 
 .content__figuras {
   align-items: center;
-  border-color: #5c3d2e;
+
   border-radius: 20px;
-  border-style: solid;
+  /*   border-color: #5c3d2e;
+  border-style: solid; */
   display: flex;
   flex-direction: column;
   min-width: 850px;
@@ -57,9 +58,9 @@
   display: flex;
   width: 1000px;
   height: 350px;
-  justify-content: space-between;
-  border-color: red;
-  border-style: solid;
+  justify-content: space-around;
+  /* border-color: red;
+  border-style: solid; */
 }
 
 .content__figuras--row-2 {
@@ -71,15 +72,15 @@
 }
 
 .figuras__card {
-  background-color: #ff8303;
+  background-color: #6f480e;
   align-items: center;
   display: flex;
-  height: 250px;
-  width: 300px;
+  height: 285px;
+  width: 270px;
   border-style: solid;
-  border-color: #206a5d;
+  border-color: white;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   border-radius: 20px;
 }
 
@@ -92,17 +93,58 @@
 .figuras__card--p {
   color: white;
   font-weight: 200;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
 }
 
-.figuras__card--input {
+.input {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid white;
   font-size: 14px;
   text-align: center;
   height: 30px;
-  border-radius: 25px;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  outline: none;
+  width: 150px;
 }
 
-.figuras__card--input::placeholder {
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input::placeholder {
   text-align: center;
+  color: white;
+  font-weight: 200;
+}
+
+.figuras__card--buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 220px;
+  height: 45px;
+}
+
+.button {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  height: 30px;
+  letter-spacing: 1px;
+  width: 100px;
+  border: 2px solid white;
+}
+
+.button:hover {
+  background-color: #85603f;
 }
